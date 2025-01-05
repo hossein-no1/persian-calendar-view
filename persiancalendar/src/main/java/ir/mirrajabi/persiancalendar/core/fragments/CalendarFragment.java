@@ -40,6 +40,12 @@ public class CalendarFragment extends Fragment implements ViewPager.OnPageChange
         mPersianCalendarHandler = PersianCalendarHandler.getInstance(getContext());
         mViewPagerPosition = 0;
         mMonthViewPager = (ViewPager) view.findViewById(R.id.calendar_pager);
+        mMonthViewPager.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                return false;
+            }
+        });
         mPersianCalendarHandler.setOnEventUpdateListener(new OnEventUpdateListener() {
             @Override
             public void update() {

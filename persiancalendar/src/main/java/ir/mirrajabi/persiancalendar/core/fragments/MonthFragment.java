@@ -58,6 +58,12 @@ public class MonthFragment extends Fragment {
         mPersianDate.setDayOfMonth(1);
 
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.month_recycler);
+        recyclerView.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                return false;
+            }
+        });
         recyclerView.setHasFixedSize(true);
 
         RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getContext(), 7);
