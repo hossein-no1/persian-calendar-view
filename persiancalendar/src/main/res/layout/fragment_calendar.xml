@@ -4,4 +4,9 @@
     android:id="@+id/calendar_pager"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"/>
+    android:orientation="vertical"
+    android:scrollbars="none"
+    android:clickable="false"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    />

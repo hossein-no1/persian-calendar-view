@@ -10,7 +10,10 @@
         android:id="@+id/month_recycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="vertical"
+        android:scrollbars="none"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
         android:paddingBottom="@dimen/grid_calendar_padding_bottom"/>
 
 </RelativeLayout>
